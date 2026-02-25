@@ -95,3 +95,114 @@ li button:nth-child(5) {
 li button:nth-child(6) {
   background: #f59e0b;
 }
+
+@media (max-width: 900px) {
+
+  .wrapper {
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .wrapper h1 {
+    grid-column: span 3;
+  }
+
+  ul {
+    width: 90%;
+  }
+
+  li {
+    grid-template-columns: 1fr 1fr 1fr auto auto auto;
+    font-size: 15px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .wrapper {
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wrapper h1 {
+    grid-column: span 2;
+  }
+
+  .wrapper button {
+    grid-column: span 2;
+  }
+
+  ul {
+    width: 95%;
+  }
+
+  li {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  li button {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .wrapper {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+
+  .wrapper h1 {
+    grid-column: span 1;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .wrapper input,
+  .wrapper select,
+  .wrapper button {
+    width: 100%;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  li {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  li button {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+}
+
+
+@media (max-width: 350px) {
+
+  .wrapper {
+    padding: 10px;
+  }
+
+  .wrapper h1 {
+    font-size: 18px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+}
