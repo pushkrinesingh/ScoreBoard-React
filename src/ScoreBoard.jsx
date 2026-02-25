@@ -47,6 +47,8 @@ const ScoreBoard = () => {
       }),
     );
   }
+  const SortedPlayers=[...Player].sort((a,b)=>a.Score-b.Score);
+
   return (
     <>
       <div className="wrapper">
@@ -80,7 +82,7 @@ const ScoreBoard = () => {
         <button onClick={AddPlayer}>ADD</button>
       </div>
       <ul>
-        {Player.map((obj) => {
+        {SortedPlayers.map((obj) => {
           return (
             <li key={obj.id}>
               <span>{obj.Name}</span>
