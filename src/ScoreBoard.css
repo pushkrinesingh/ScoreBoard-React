@@ -19,13 +19,11 @@ body {
   grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr auto;
   gap: 10px;
   align-items: center;
-
   background: white;
   padding: 15px;
   border-radius: 8px;
   width: 800px;
   margin-bottom: 15px;
-
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -67,12 +65,10 @@ li {
   grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr auto auto auto;
   gap: 10px;
   align-items: center;
-
   background: white;
   padding: 12px;
   border-radius: 8px;
   margin-bottom: 10px;
-
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
